@@ -12,13 +12,14 @@
       <div>Menu 1</div>
       <div>Menu 1</div>
     </div>
+    <p v-show="xacdinh">Test show element</p>
     <button @click="changeXacdinh">Doi cau tra loi</button>
   </div>
 </template>
 
 <script>
-// Tat ca du lieu truyen qua html o dang du lieu tho
-// computed thuc hien nhu mot function nhung chi duoc coi la 1 t
+// v-if se remove phan tu di, con v-show se an phan tu di
+
 export default {
   name: "App",
   data() {
