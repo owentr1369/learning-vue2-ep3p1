@@ -1,6 +1,9 @@
 <template>
   <div id="app">
-    Hello
+    <p>You're doctor</p>
+    <p v-if="xacdinh">Yes, I am</p>
+    <p v-else>No, I am not</p>
+    <button @click="changeXacdinh">Doi cau tra loi</button>
   </div>
 </template>
 
@@ -10,11 +13,15 @@
 export default {
   name: "App",
   data() {
-
+    return {
+      xacdinh: true,
+    };
   },
-  methods: {},
-  computed: {
-  
+  methods: {
+    changeXacdinh: function () {
+      this.xacdinh = !this.xacdinh;
+      return;
+    },
   },
 };
 </script>
@@ -27,12 +34,5 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-}
-.vuong {
-  width: 100px;
-  height: 100px;
-  background-color: gray;
-  display: inline-block;
-  margin: 10px;
 }
 </style>
