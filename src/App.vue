@@ -3,6 +3,15 @@
     <p>You're doctor</p>
     <p v-if="xacdinh">Yes, I am</p>
     <p v-else>No, I am not</p>
+
+    <hr />
+    <div id="wrap" v-if="xacdinh">
+      <div>Menu 1</div>
+      <div>Menu 1</div>
+      <div>Menu 1</div>
+      <div>Menu 1</div>
+      <div>Menu 1</div>
+    </div>
     <button @click="changeXacdinh">Doi cau tra loi</button>
   </div>
 </template>
